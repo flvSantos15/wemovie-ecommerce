@@ -16,13 +16,9 @@ export function CartContent() {
   }
 
   const handleCheckout = async () => {
-    new Promise((resolve) => {
-      router.push('/success')
+    router.push('/success')
 
-      clearCart()
-
-      resolve(true)
-    });
+    clearCart()
   }
 
   return (
